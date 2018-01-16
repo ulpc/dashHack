@@ -14,7 +14,7 @@ Password: (패스워드 입력)
 Waiting for a button press... (Amazon Dash 클릭)
 Button press detected: 00:fc:8b:58:98:75
 ```
-* tip: 이 프로그램을 실행하는 기기와 Amazon Dash가 같은 네트워크에 접속한 상태여야 합니다.
+* 이 프로그램을 실행하는 기기와 Amazon Dash가 같은 네트워크에 접속한 상태여야 합니다.
 
 ## 액션 config 작성하기
 
@@ -39,7 +39,7 @@ Button press detected: 00:fc:8b:58:98:75
 def print_message(message):
     print message
 ```
-* tip: 액션 function은 action.py에 선언합니다. 여기 기술하는 인자 개수와 액션 config에 기술하는 인자 개수의 일치에 주의하세요.
+* 액션 function은 action.py에 선언합니다. 여기 기술하는 인자 개수와 액션 config에 기술하는 인자 개수의 일치에 주의하세요.
 
 ## 데몬 실행하기
 ```
@@ -48,4 +48,4 @@ Password: (패스워드 입력)
 Waiting for the button press... (config에 등록한 Amazon Dash 클릭)
 hello world
 ```
-액션 config의 경우 디폴트로 `config.yml`를 사용합니다. 하지만 `--config` 파라미터를 사용해 원하는 파일로 대체할 수도 있습니다.
+* 액션 config의 경우 디폴트로 `config.yml`를 사용합니다. 하지만 `--config` 파라미터를 사용해 원하는 파일로 대체할 수도 있습니다.

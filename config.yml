@@ -1,0 +1,5 @@
+00:fc:8b:58:98:75:
+    function:
+        print_message
+    args:
+        ["hello world"]

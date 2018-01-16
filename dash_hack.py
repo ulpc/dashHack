@@ -21,8 +21,8 @@ def run(pkt, config):
         if not isinstance(option, tuple):
             continue
         if 'requested_addr' in option:
-            fdict = config[pkt.src]
-            fdict['function'](*fdict['args'])
+            cdict = config[pkt.src]
+            cdict['action'](*cdict['args'])
             break
 
 
@@ -40,8 +40,8 @@ def main():
         module = importlib.import_module("action")
         with open(args.config, "r") as f:
             config = yaml.load(f)
-            for mac, fdict in config.iteritems():
-                fdict["function"] = getattr(module, fdict["function"])
+            for mac, cdict in config.iteritems():
+                cdict["action"] = getattr(module, cdict["action"])
 
             mac_id_list = list(config.keys())
 

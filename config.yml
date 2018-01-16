@@ -1,5 +1,5 @@
 00:fc:8b:58:98:75:
-    function:
+    action:
         print_message
     args:
         ["hello world"]

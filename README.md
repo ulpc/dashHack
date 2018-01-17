@@ -4,7 +4,7 @@ Amazon Dash를 해킹해 가지고 놀자.
 
 ## 필요한 패키지 설치하기
 ```
-$pip install -r requirements.txt
+$pip install --user -r requirements.txt
 ```
 
 ## Amazon Dash MAC주소 찾기

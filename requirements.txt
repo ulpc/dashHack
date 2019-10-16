@@ -1,2 +1,2 @@
-scapy==2.3.3
-PyYAML==3.12
+scapy==2.4.3
+PyYAML==5.1.2
